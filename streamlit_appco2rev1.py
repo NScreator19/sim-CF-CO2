@@ -137,4 +137,4 @@ co2_process = clinker_factor  * calcination_factor * 1000
 co2_fuel = stec * fuel_ef * (1 - tsr / 100) * clinker_factor
 co2_total = co2_process + co2_fuel
 
-st.metric("CO2 Specific Net (kg CO2/ton cement Eq)", f"{co2_net:.0f}")
+st.metric("CO2 Specific Net (kg CO2/ton cement Eq)", f"{co2_total:.0f}")

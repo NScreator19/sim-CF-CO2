@@ -130,7 +130,7 @@ st.header("🔍 Simulasi Emisi CO₂ Berdasarkan Clinker Factor Konsolidasi")
 clinker_factor = st.number_input("Clinker Factor Konsolidasi (%)", min_value=0.0, max_value=100.0, value=cf_awal)
 stec = st.number_input("STEC (MJ/ton Clinker)", value=3340.0)
 tsr = st.number_input("TSR  (%)", value=13.0)
-fuel_ef = st.number_input("fuel_ef  (kg CO2/MJ)", value=10.0958)
+fuel_ef = st.number_input("fuel_ef  (kg CO2/MJ)", value=0.0958)
 calcination_factor = st.number_input("Calcination Factor (kg CO2/kg Clinker)", value=0.531)
 
 co2_process = clinker_factor  * calcination_factor * 1000
